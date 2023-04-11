@@ -4,7 +4,8 @@ Continuing where the React tutorial left off
 
 [Please see wireframe made with miro](https://miro.com/app/board/uXjVMWV1yy4=/?share_link_id=363169693001)
 
-I am still working on converting the paper wireframes to Miro.  I will add them ASAP.
+# User Stories
+[Link to User Stories Here](https://docs.google.com/document/d/1-TslpLngZ_cMvTTOs-j-qRVsqgoLWqUHz9l_aLd2k_Y/edit?usp=sharing)
 
 # React Tutorial notes
 
