@@ -3,6 +3,9 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+ /* Default font size and line height for body text */
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .App .App-content {
@@ -13,38 +16,21 @@
   flex-shrink: 0;
 }
 
-
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Media query for screens smaller than 768px */
+@media (max-width: 960px) {
+  .App {
+    font-size: 14px;
+    line-height: 1.4;
+  }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Media query for screens smaller than 480px */
+@media (max-width: 480px) {
+  .App {
+    font-size: 12px;
+    line-height: 1.3;
   }
-} */
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+
