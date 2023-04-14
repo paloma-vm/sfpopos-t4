@@ -1,3 +1,7 @@
+
+# Responsive assignment:
+I am not finished, encountered some blockers but I will have it done by tomorrow or Sunday.  I am turning in what I have done so far.
+
 Continuing where the React tutorial left off
 
 # Wireframes

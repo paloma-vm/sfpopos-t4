@@ -1,34 +1,18 @@
 // src/components/Map/Map.js
 import React from 'react';
 import './Map.css';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
-function Map(props) {
-  const {name, image, address, hours, id} = props
-  console.log(name)
+function Map() {
   return (
-    <div className='Map'>
-      <Link to={`/details/${id}`}>
-        <img src={`${process.env.PUBLIC_URL}/images/${image}`}     
-          width="300"
-          height="300"
-          alt="Hello"
-        />
-      </Link>
-      <h1>
-        <Link
-          className='Map-title'
-          to={`/details/${id}`}>
-          {name}
-        </Link>
-      </h1>
-      <div className='Map-info'>
-        <div>{address}</div>
-        <div className='hours'>{hours}</div>
-      </div>
-    </div>
+    <img src='../../../public/map-placeholder.png'
+            srcset="image-small.jpg 480w,
+                    image-medium.jpg 768w,
+                    image-large.jpg 1200w"
+      alt="Responsive map placeholder image"
+    >
+    </img>
   )
 }
-
 
 export default Map
