@@ -11,3 +11,8 @@
       />
 
   // document.getElementById('root')
+
+
+  srcset="image-small.jpg 480w,
+                    image-medium.jpg 768w,
+                    image-large.jpg 1200w"

@@ -5,13 +5,9 @@ import './Map.css';
 
 function Map() {
   return (
-    <img src='../../../public/map-placeholder.png'
-            srcset="image-small.jpg 480w,
-                    image-medium.jpg 768w,
-                    image-large.jpg 1200w"
-      alt="Responsive map placeholder image"
-    >
-    </img>
+    <div className='POPOSDetails-map'>
+      <img src={process.env.PUBLIC_URL + '/map-placeholder.png'} alt='map placeholder'/>
+    </div>
   )
 }
 

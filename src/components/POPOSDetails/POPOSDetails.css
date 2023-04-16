@@ -2,7 +2,9 @@
 .POPOSDetails {
 	display: flex;
 	flex-direction: row-reverse;
-	width: 960px;
+	/* width: 960px; */
+	width: 95%;
+	max-width: 1200px;
 	margin: auto;
 }
 
@@ -14,11 +16,11 @@
 
 .POPOSDetails .POPOSDetails-title {
 	font-size: 2em;
-	margin: 0;
+	
 }
 
 .POPOSDetails .POPOSDetails-image {
-	flex: 1;
+	flex: 1.5;
 }
 
 .POPOSDetails .POPOSDetails-image img {
@@ -26,8 +28,18 @@
 }
 
 .POPOSDetails .POPOSDetails-hours {
-	font-size: 1.5em;
+	/* font-size: 1.5em; */
 }
+
+.POPOSDetails .POPOSDetails-desc {
+	order: 5;
+}
+
+.POPOSDetails .POPOSDetails-map {
+	width: 100%;
+}
+
+
 
 /* Smaller screens and tablets */
 /* @media only screen and (max-width: 768px) {
@@ -39,27 +51,26 @@
 /* Small screens mobile */
 @media only screen and (max-width: 480px) {
 	.POPOSDetails {
-		/* flex: 1; */
+		flex: 1;
 		text-align: left;
-		/* padding: 0 1rem; */
+		padding: 0 1rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 95%;
-		margin: 1rem;
+		/* width: 90%; */
+		/* margin: 1rem; */
 	}
 
 	.POPOSDetails .POPOSDetails-info {
-		/* flex: 1;
-		text-align: left; */
+		flex: 1;
+		text-align: left;
 		padding: 0 1em;
 		display: flex;
 		flex-direction: column;
 	}
 
 	.POPOSDetails .POPOSDetails-title {
-		/* font-size: 2em;
-		margin: 0; */
+		font-size: 2em;
 		order: 1;
 	}
 
@@ -88,6 +99,11 @@
 	.POPOSDetails .POPOSFeatureList {
 		font-size: 1.5em;
 		order: 4;
+	}
+
+	.POPOSDetails .POPOSDetails-map {
+		order: 6;
+		clear: both;
 	}
 
 }
