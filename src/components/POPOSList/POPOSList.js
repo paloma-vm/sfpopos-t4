@@ -6,6 +6,7 @@ import POPOSSpace from '../POPOSSpace/POPOSSpace';
 import './POPOSList.css';
 import data from '../../sfpopos-data.js'
 import { useState } from 'react'
+import RandomSpace from '../RandomSpace/RandomSpace';
 
 function POPOSList() {
   const [ query, setQuery ] = useState('')
@@ -37,16 +38,23 @@ function POPOSList() {
 })
 
   return (
-    <div className="POPOSList">
-			<form>
-				<input
-					value={query}
-					placeholder="search"
-					onChange={(e) => setQuery(e.target.value)}
-				/>
-				<button type="submit">Submit</button>
-			</form>
-			{spaces}
+    <div>
+      <div className='search-header'>
+      <form>
+        <input
+          value={query}
+          placeholder="search"
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        <button type="submit">Submit</button>
+      </form>
+      <RandomSpace className='RandomSpace'/>
+        </div>
+      <div className="POPOSList-grid">
+      
+      
+        {spaces}
+      </div>
     </div>
   )
 }

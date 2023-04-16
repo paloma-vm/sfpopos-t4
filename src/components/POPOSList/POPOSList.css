@@ -1,9 +1,9 @@
 /* src/POPOSList.css */
 .POPOSList {
     /* width: calc(100% - 80px); */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2em;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr;	 */
+    /* grid-gap: 2em; */
     max-width: 1200px;
     margin: auto;
     padding: 2em;
@@ -32,6 +32,23 @@
 	border-bottom-right-radius: 0.5em;
 }
 
+.search-header {
+	/* grid-area: s; */
+	display: flex;
+	align-items: center;
+	/* flex: 3 0 auto; */	
+}
+
+.POPOSList-grid {
+    /* width: calc(100% - 80px); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;	
+    grid-gap: 2em;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2em;
+}
+
 /* Smaller screens and tablets */
 /* @media only screen and (max-width: 768px) {
 	.POPOSList {
@@ -41,7 +58,7 @@
 
 /* Small screens mobile */
 @media only screen and (max-width: 480px) {
-	.POPOSList {
+	.POPOSList-grid {
 		grid-template-columns: 1fr;
 	}
 }
