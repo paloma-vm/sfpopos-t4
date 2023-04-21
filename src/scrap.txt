@@ -16,3 +16,11 @@
   srcset="image-small.jpg 480w,
                     image-medium.jpg 768w,
                     image-large.jpg 1200w"
+
+
+
+
+role='img'
+		aria-label={props.name ? props.name:""}
+		aria-hidden={props.name ? "false":"true"} /* This makes the label the name and if it doesn't have a name it is hidden
+		and the screen reader will ignore it */

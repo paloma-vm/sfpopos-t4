@@ -6,7 +6,7 @@
     /* grid-gap: 2em; */
     max-width: 1200px;
     margin: auto;
-    padding: 2em;
+    /* padding: 2em; */
   }
 
 .POPOSList form {
@@ -33,10 +33,16 @@
 }
 
 .search-header {
-	/* grid-area: s; */
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	/* flex: 3 0 auto; */	
+	margin: auto;
+	border-bottom: 1px solid lightgray;
+	width: 100vw;
+	position: relative;
+	left: calc(-50vw + 50%);
+	box-sizing: border-box;
+
 }
 
 .POPOSList-grid {

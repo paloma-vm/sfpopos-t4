@@ -5,10 +5,10 @@ import './Footer.css';
 function Footer(props) {
   const {name, copyright_year} = props
   return (
-    <div className='Footer'>
+    <footer className='Footer'>
       <div>{name}</div>
-      <div>{copyright_year}</div>
-    </div>
+      <div>{copyright_year}</div> 
+    </footer>
 
   )
 }

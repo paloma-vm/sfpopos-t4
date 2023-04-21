@@ -10,10 +10,13 @@ const date_year = date_made.getFullYear();
 function App() {
   return (
     <div className="App">
-      <div className='App-content'>
+      <div className='header-background'>
         <Header />
-        <Outlet />
       </div>
+
+      <main className='App-content'>
+        <Outlet />
+      </main>
       <Footer
         name="Paloma Valdez-Marsh"
         copyright_year={`copyright ${date_year}`}

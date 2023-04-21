@@ -2,12 +2,13 @@
 .Header {
     box-sizing: border-box;
     width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     /* align-items: center; */
     padding: 1em;
-    margin-bottom: 2em;
+    margin: auto;
     background-color: rgb(192, 45, 26);
     color: #fff;
   }
@@ -31,8 +32,9 @@
   .Header-left {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     /* when i say justify flex start, the subheader goes above the h1 ?*/
+    align-items: flex-start;
   }
 
   .Header-right {
@@ -65,9 +67,34 @@
     font-size: 18px;
   }
 
+  .mobile-nav {
+   display: none;
+  }
+
+
 /* Small screens mobile */
 @media only screen and (max-width: 480px) {
 	.Header-Subheader {
     display: none; /* hides the subheader */
   }
+
+  .Header-left {
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    margin: auto;
+
+  }
+
+  .mobile-nav {
+    display: flex;
+    border: solid 1px white;
+  }
+
+  .desk-nav {
+    display: none;
+  }
+
+  
+
 }

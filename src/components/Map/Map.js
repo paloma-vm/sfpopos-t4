@@ -5,9 +5,9 @@ import './Map.css';
 
 function Map() {
   return (
-    <div className='POPOSDetails-map'>
-      <img src={process.env.PUBLIC_URL + '/map-placeholder.png'} alt='map placeholder'/>
-    </div>
+    <map className='POPOSDetails-map'>
+      <img src={process.env.PUBLIC_URL + '/map-placeholder.png'} alt='map placeholder'/> {/* Will add actual maps at some point */}
+    </map>
   )
 }
 

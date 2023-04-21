@@ -19,9 +19,15 @@
   /* flex-shrink: 0; */
 }
 
+.header-background {
+  background-color: rgb(192, 45, 26);
+  width: 100%;
+  flex-shrink: 0;
+}
+
+
 .Footer {
   flex-shrink: 0;
-  max-width: 1200px;
   font-size: 0.75em;
   /* flex-grow: 2; */
   

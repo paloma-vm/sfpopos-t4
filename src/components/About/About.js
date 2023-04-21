@@ -3,7 +3,7 @@ import './About.css'
 
 function About() {
   return (
-    <div className='About'>
+    <main className='About'>
       <h1>About SFPOPOS</h1>
       <p>
         POPOS are publicly accessible spaces in
@@ -16,7 +16,7 @@ function About() {
         Francisco, POPOS mostly appear in the Downtown
         office district area.
       </p>
-    </div>
+    </main>
   )
 }
 

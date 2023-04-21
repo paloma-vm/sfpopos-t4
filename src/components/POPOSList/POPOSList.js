@@ -38,7 +38,7 @@ function POPOSList() {
 })
 
   return (
-    <div>
+    <div className='POPOSList'>
       <div className='search-header'>
       <form>
         <input
