@@ -19,11 +19,14 @@ function Header() {
       <div className='Header-right a'> 
         <div className='mobile-nav'>
           <NavLink
-          className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
-          to="/">
-            <FontAwesomeIcon icon={icon({name: 'coffee'})} />
-            {/* <img src={process.env.PUBLIC_URL + '/home.png'} className="list-img" alt="home icon" width="40px" height="40px"></img> */}
-          </NavLink>
+                  className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
+                  to="/"><FontAwesomeIcon icon={icon({name: 'house', family: 'classic', style: 'solid'})} /></NavLink>
+          <NavLink
+                  className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
+                  to="/about"><FontAwesomeIcon icon={icon({name: 'circle-info', family: 'classic', style: 'solid', size: '6x'})} /></NavLink>
+          <NavLink
+                  className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
+                  to="/register"><FontAwesomeIcon icon={icon({name: 'user-plus', family: 'classic', style: 'solid'})} /></NavLink>
         </div>
 
         <div className='desk-nav'>
@@ -33,6 +36,9 @@ function Header() {
           <NavLink
                   className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
                   to="/about">About</NavLink>
+          <NavLink
+                  className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
+                  to="/register">Register</NavLink>
         </div>
         {/* <RandomSpace className='RandomSpace'/> */}
       </div>

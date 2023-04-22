@@ -8,9 +8,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './components/About/About';
 import POPOSList from './components/POPOSList/POPOSList';
 import POPOSDetails from './components/POPOSDetails/POPOSDetails';
-
-
-
+import Register from './components/Register/Register';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -21,7 +19,8 @@ root.render(
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="/" element={<POPOSList />} />
-        <Route path="about" element={<About />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/details/:id" element={<POPOSDetails />} />
       </Route>
     </Routes>

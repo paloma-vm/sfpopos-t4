@@ -7,6 +7,8 @@ import './POPOSList.css';
 import data from '../../sfpopos-data.js'
 import { useState } from 'react'
 import RandomSpace from '../RandomSpace/RandomSpace';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
 
 function POPOSList() {
   const [ query, setQuery ] = useState('')
@@ -40,19 +42,17 @@ function POPOSList() {
   return (
     <div className='POPOSList'>
       <div className='search-header'>
-      <form>
-        <input
-          value={query}
-          placeholder="search"
-          onChange={(e) => setQuery(e.target.value)}
-        />
-        <button type="submit">Submit</button>
-      </form>
-      <RandomSpace className='RandomSpace'/>
-        </div>
+        <form>
+          <input
+            value={query}
+            placeholder="add search term"
+            onChange={(e) => setQuery(e.target.value)}
+          />
+          <button type="submit" className='search-button'><FontAwesomeIcon icon={icon({name: 'magnifying-glass', family: 'classic', style: 'solid'})} /><div className='search-button-label'> Search</div></button>
+        </form>
+        <RandomSpace className='RandomSpace'/>
+      </div>
       <div className="POPOSList-grid">
-      
-      
         {spaces}
       </div>
     </div>

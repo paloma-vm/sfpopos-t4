@@ -24,3 +24,5 @@ role='img'
 		aria-label={props.name ? props.name:""}
 		aria-hidden={props.name ? "false":"true"} /* This makes the label the name and if it doesn't have a name it is hidden
 		and the screen reader will ignore it */
+
+{/* <img src={process.env.PUBLIC_URL + '/home.png'} className="list-img" alt="home icon" width="40px" height="40px"></img> */}

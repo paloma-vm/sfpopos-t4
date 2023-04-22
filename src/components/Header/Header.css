@@ -88,11 +88,25 @@
 
   .mobile-nav {
     display: flex;
-    border: solid 1px white;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 0.5rem;
   }
 
   .desk-nav {
     display: none;
+  }
+
+  .mobile-nav > * {
+    border: solid 1px white;
+    border-radius: 0.25rem;
+    
+  }
+
+  .mobile-nav > :first-child {
+    margin-right: auto;
+    
+  
   }
 
   
