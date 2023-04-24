@@ -4,9 +4,8 @@
     width: 100%;
     max-width: 1200px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
+    justify-content: space-between;
+    align-items: center;
     padding: 1em;
     margin: auto;
     background-color: rgb(192, 45, 26);
@@ -18,7 +17,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0, 
+    padding: 0;
   }
 
   .Header h1 {
@@ -78,6 +77,14 @@
     display: none; /* hides the subheader */
   }
 
+  .Header a {
+    display: inline-block;
+    /* padding: 0.5em 1em; */
+    color: rgba(255, 255, 255, 0.835);
+    font-weight: bold;
+    text-decoration: none;
+    
+  }
   .Header-left {
     display: flex;
     justify-items: center;

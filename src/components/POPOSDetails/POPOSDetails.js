@@ -20,8 +20,8 @@ function POPOSDetails(props) {
       <div className="POPOSDetails-info">
         <h1 className="POPOSDetails-title">{ title }</h1>
         <p className="POPOSDetails-desc">{ desc }</p>
-        <p className="POPOSDetails-hours">hours: { hours }</p>
-        <address className="POPOSDetails-address">{ address }</address>
+        <p className="POPOSDetails-hours">Hours: { hours }</p>
+        <p className="POPOSDetails-address">Address:<address>{ address }</address></p>
         {/* <p className="POPOSDetails-features">{ features }</p> */}
         <POPOSFeatureList features={ features }/>
         <Map />

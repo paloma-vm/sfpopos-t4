@@ -14,7 +14,6 @@ function Header() {
       <div className='Header-left'> {/* make this <nav> */}
         <h1>SFPOPOS</h1>
         <div className="Header-Subheader">San Francisco Privately Owned Public Open Spaces</div>
-
       </div>
       <div className='Header-right a'> 
         <div className='mobile-nav'>
