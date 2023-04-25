@@ -3,12 +3,13 @@ import './Register.css'
 
 function Register() {
   return (
-    <main className='About'>
+    <main className='Register'>
       <h1>Register</h1>
       <p>
         Register for the SFPOPOS Newsletter to receive updates about 
         all your favorite SFPOPOS. 
-
+      </p>
+      <p>
         By signing up, you will be the first to know about events, news, and new art displays.
       </p>
       
