@@ -12,7 +12,7 @@ function POPOSSpace(props) {
         <img src={`${process.env.PUBLIC_URL}/images/${image}`}     
           width="300"
           height="300"
-          alt="Hello"
+          alt="a POPOSpace"
         />
       </Link>
       <h1>
@@ -23,7 +23,7 @@ function POPOSSpace(props) {
         </Link>
       </h1>
       <div className='POPOSSpace-info'>
-        <div>{address}</div>
+        <address>{address}</address>
         <div className='hours'>{hours}</div>
       </div>
     </div>

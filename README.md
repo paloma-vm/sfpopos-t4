@@ -1,6 +1,14 @@
 
+# Accessibility assignment:
+## (I am behind on my work, will get done ASAP)
+TODO:
+- change h1s to p?
+- check and correct errors detected using Lighthouse and WAVE
+- make other improvments
+
 # Responsive assignment:
 TODO:
+- make details info on spaces on list page responsive
 - add confirmation message for registration
 - implemement maps API
 - make other improvments
