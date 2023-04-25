@@ -1,8 +1,12 @@
 
 # Responsive assignment:
-I am not finished, encountered some blockers but I will have it done by tomorrow or Sunday.  I am turning in what I have done so far.
+TODO:
+- add confirmation message for registration
+- implemement maps API
+- make other improvments
 
-Continuing where the React tutorial left off
+
+This project picks up where the [React Tutorial](https://github.com/paloma-vm/react-tutorial.git) left off.
 
 # Wireframes
 
