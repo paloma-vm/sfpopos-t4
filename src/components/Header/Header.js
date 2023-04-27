@@ -19,13 +19,16 @@ function Header() {
         <div className='mobile-nav'>
           <NavLink
                   className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
-                  to="/"><FontAwesomeIcon icon={icon({name: 'house', family: 'classic', style: 'solid'})} /></NavLink>
+                  to="/"><FontAwesomeIcon icon={icon({name: 'house', family: 'classic', style: 'solid'})} />
+                  <span className="sr-only">All Spaces</span></NavLink>
           <NavLink
                   className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
-                  to="/about"><FontAwesomeIcon icon={icon({name: 'circle-info', family: 'classic', style: 'solid', size: '6x'})} /></NavLink>
+                  to="/about"><FontAwesomeIcon icon={icon({name: 'circle-info', family: 'classic', style: 'solid', size: '6x'})} />
+                  <span className="sr-only">About</span></NavLink>
           <NavLink
                   className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
-                  to="/register"><FontAwesomeIcon icon={icon({name: 'user-plus', family: 'classic', style: 'solid'})} /></NavLink>
+                  to="/register"><FontAwesomeIcon icon={icon({name: 'user-plus', family: 'classic', style: 'solid'})} />
+                  <span className="sr-only">Register</span></NavLink>
         </div>
 
         <div className='desk-nav'>

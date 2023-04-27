@@ -12,7 +12,7 @@ function POPOSSpace(props) {
         <img src={`${process.env.PUBLIC_URL}/images/${image}`}     
           width="300"
           height="300"
-          alt="a POPOSpace"
+          alt={`photograph of the ${name} space`}
         />
       </Link>
       <h1>

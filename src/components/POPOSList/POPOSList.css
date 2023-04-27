@@ -14,30 +14,35 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	/* font-size: 1rem; */
+	
 }
 
-.POPOSList form input, .POPOSList form button {
-	padding: 1em;
-	margin: 0;
-	border: 1px solid;
-	font-size: 1rem;
+.searchFormLabel {
+	display: none;
 }
 
-.POPOSList form input {
+.listSearchInput {
+	border-width: 1px 0 1px 1px;
 	border-top-left-radius: 0.5em;
 	border-bottom-left-radius: 0.5em;
-	width: 50%;
-}
-
-.POPOSList form button {
-	border-top-right-radius: 0.5em;
-	border-bottom-right-radius: 0.5em; 
-	/* I am not sure why the input field has rounded corners on right side */
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0; 
+	padding: 1em;
+	margin: 0;
+	text-align: center;
 }
 
 .search-button {
+	border-top-right-radius: 0.5em;
+	border-bottom-right-radius: 0.5em; 
 	display: flex;
 	gap: 0.4em;
+	padding: 1em;
+	margin: 0;
+	border: 1px solid;
+	align-self: stretch;
+	align-items: center;
 }
 
 .search-header {
@@ -74,24 +79,11 @@
 
 	.search-header {
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
 		align-items: center;
 		margin: auto;
 		border-bottom: 1px solid lightgray;
-		/* width: 100vw; */
 	}
-
-	/* .POPOSList form input {
-		padding: 0.8rem;
-		margin: 0;
-		border: 1px solid;
-	}
-
-	.POPOSList form button {
-		padding: 0.8rem;
-		margin: 0;
-		border: 1px solid;
-	} */
 	
 	.random-spaces {
 		display: flex;
@@ -100,4 +92,17 @@
 	.search-button-label {
 		display: none;
 	}
+
+	.listSearchInput {
+		width: 60%;
+		padding: 0.5em;
+		align-self: stretch;
+	}
+
+	.POPOSList form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 }

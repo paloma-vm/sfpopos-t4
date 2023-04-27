@@ -43,10 +43,14 @@ function POPOSList() {
     <div className='POPOSList'>
       <div className='search-header'>
         <form>
+          <label htmlFor="listSearchInput" className='searchFormLabel'>search input area</label>
           <input
             value={query}
             placeholder="add search term"
             onChange={(e) => setQuery(e.target.value)}
+            className="listSearchInput"
+            id="listSearchInput"
+            type="search"
           />
           <button type="submit" className='search-button'><FontAwesomeIcon icon={icon({name: 'magnifying-glass', family: 'classic', style: 'solid'})} /><div className='search-button-label'> Search</div></button>
         </form>
